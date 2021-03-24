@@ -5,4 +5,6 @@ src/main/content/jcr_root/apps/${appId}/clientlibs/clientlib-dependencies
 src/main/content/jcr_root/apps/${appId}/clientlibs/clientlib-angular
 #elseif ( $frontendModule == "react" )
 src/main/content/jcr_root/apps/${appId}/clientlibs/clientlib-react
+#elseif ( $frontendModule == "vue" )
+src/main/content/jcr_root/apps/${appId}/clientlibs/clientlib-vue
 #end

@@ -10,7 +10,7 @@ def uiContentPackage = new File(rootDir, "ui.content")
 def uiConfigPackage = new File(rootDir, "ui.config")
 def coreBundle = new File(rootDir, "core")
 def rootPom = new File(rootDir, "pom.xml")
-def frontendModules = ["general", "angular", "react"]
+def frontendModules = ["general", "angular", "react", "vue"]
 
 def singleCountry = request.getProperties().get("singleCountry")
 def appId =  request.getProperties().get("appId")
@@ -241,7 +241,7 @@ def cleanUpFrontendModule(frontendModules, optionFrontendModule, rootPom, rootDi
     }
 
     // Not generating SPA: Delete SPA-specific files
-    if (optionFrontendModule != "angular" && optionFrontendModule != "react") {
+    if (optionFrontendModule != "angular" && optionFrontendModule != "react" && optionFrontendModule != "vue") {
         // Delete app component
         assert new File("$appsFolder/components/structure/spa").deleteDir()
 
@@ -261,7 +261,7 @@ def cleanUpFrontendModule(frontendModules, optionFrontendModule, rootPom, rootDi
     }
 
     // Generating SPA: Delete non-SPA specific files
-    if (optionFrontendModule == "angular" || optionFrontendModule == "react") {
+    if (optionFrontendModule == "angular" || optionFrontendModule == "react" || optionFrontendModule == "vue") {
         assert new File("$confFolder/settings/wcm/templates/page-content").deleteDir()
         assert new File("$confFolder/settings/wcm/template-types/page").deleteDir()
     }
