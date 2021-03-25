@@ -14,7 +14,7 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 <template>
-
+  <div></div>
 </template>
 <script lang="ts">
 import {
@@ -27,7 +27,7 @@ import {
 const ContainerConfig = {
     emptyLabel: 'Container',
 
-    isEmpty: function(props) {
+    isEmpty: function(props: any) {
         return !props || !props.cqItemsOrder || props.cqItemsOrder.length === 0;
     }
 };

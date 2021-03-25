@@ -14,7 +14,7 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 <template>
-
+  <div></div>
 </template>
 <script lang="ts">
 import {
@@ -26,7 +26,7 @@ import {
 const ExperienceFragmentVariationConfig = {
     emptyLabel: 'Experience Fragment',
 
-    isEmpty: function(props) {
+    isEmpty: function(props: any) {
         return !props || !props.configured;
     }
 };

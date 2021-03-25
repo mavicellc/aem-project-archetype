@@ -17,7 +17,7 @@
 const path = require('path');
 const getEntrypoints = require('./utils/entrypoints');
 
-const BUILD_DIR = path.join(__dirname, 'build');
+const BUILD_DIR = path.join(__dirname, 'dist');
 const CLIENTLIB_DIR = path.join(
   __dirname,
   '..',

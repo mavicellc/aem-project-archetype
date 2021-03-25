@@ -29,7 +29,7 @@ class AppPage extends Mixins(Page) {
 }
 
 export default MapTo('${appId}/components/page')(
-    withComponentMappingContext(withRoute(AppPage))
+    withComponentMappingContext(AppPage)
 );
 </script>
 

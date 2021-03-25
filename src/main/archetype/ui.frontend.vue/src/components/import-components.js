@@ -19,4 +19,4 @@ import './Text/Text.vue';
 import './Container/Container.vue';
 import './ExperienceFragment/ExperienceFragment.vue';
 
-import {MapTo} from '@mavice/aem-mavice-editable-components';
+import {MapTo} from '@mavice/aem-vue-editable-components';

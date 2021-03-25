@@ -7,7 +7,7 @@
           v-html="getRichTextContent()"
   ></div>
   <div v-else
-       :id="modelId"
+       :id="cqPath"
        data-rte-editelement
        v-html="text">
   </div>
@@ -16,7 +16,6 @@
 
 <script>
 import DOMPurify from 'dompurify'
-import extractModelId from '../utils/extract-model-id'
 
 export default {
  name: 'Text',
@@ -29,11 +28,6 @@ export default {
   },
   text: {
    type: String
-  }
- },
- computed: {
-  modelId () {
-   return extractModelId(this.cqPath)
   }
  },
  methods: {
