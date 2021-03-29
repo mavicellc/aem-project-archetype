@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 /**
- * Returns all entrypoint chunks (JS and CSS) of the React app. These chunks
+ * Returns all entrypoint chunks (JS and CSS) of the Vue app. These chunks
  * will not need to be precached because they're already requested from the HTML
  * file)
  *

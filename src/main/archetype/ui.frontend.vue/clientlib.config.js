@@ -39,9 +39,9 @@ module.exports = {
   context: BUILD_DIR,
   clientLibRoot: CLIENTLIB_DIR,
   libs: {
-    name: 'clientlib-react',
+    name: 'clientlib-vue',
     allowProxy: true,
-    categories: ['${appId}.react'],
+    categories: ['${appId}.vue'],
     serializationFormat: 'xml',
     cssProcessor: ['default:none', 'min:none'],
     jsProcessor: ['default:none', 'min:none'],
